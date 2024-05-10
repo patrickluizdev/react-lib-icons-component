@@ -22,7 +22,7 @@ To use an icon in your project, simply import the desired icon component and inc
 
 ```jsx
 import React from 'react';
-import { Bell } from 'my-icons-library';
+import { Bell } from 'react-lib-icons-component';
 
 const App = () => {
   return (
