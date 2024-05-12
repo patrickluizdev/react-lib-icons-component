@@ -1,0 +1,15 @@
+{
+	"tabnine.experimentalAutoImports": true,
+	"workbench.colorTheme": "Dracula",
+	"editor.stickyScroll.enabled": false,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "always"
+	},
+	"explorer.confirmDelete": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"explorer.confirmDragAndDrop": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
+}
