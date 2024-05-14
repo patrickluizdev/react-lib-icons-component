@@ -3,10 +3,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { DefaultSVG } from '../../default-svg/DefaultSVG';
 
 export const Chevron: FC = ({
-	fill = '#000000',
+	fill = 'fff',
 	viewBox = '0 0 185.343 185.343',
-	height = `${240}px`,
-	width = `${240}px`,
+	height = 18,
+	width = 18,
 	id,
 }: Partial<SVGAttributes<any>>) => {
 	const randomId = id || uuidv4();
@@ -14,10 +14,10 @@ export const Chevron: FC = ({
 	return (
 		<DefaultSVG
 			viewBox={viewBox}
-			height={height}
-			width={width}
+			height={`${Number(height)}px`}
+			width={`${Number(width)}px`}
 			id={randomId}
-			fill={fill}>
+			fill={`#${fill}`}>
 			<g>
 				<g>
 					<path

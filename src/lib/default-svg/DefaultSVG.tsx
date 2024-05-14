@@ -1,5 +1,5 @@
-import React, { SVGAttributes } from 'react';
+import { SVGProps } from '../types';
 
-export const DefaultSVG = ({ children, ...rest }: SVGAttributes<any>) => {
+export const DefaultSVG = ({ children, ...rest }: SVGProps) => {
 	return <svg {...rest}>{children}</svg>;
 };

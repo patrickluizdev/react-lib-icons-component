@@ -3,26 +3,26 @@ import { v4 as uuidv4 } from 'uuid';
 import { DefaultSVG } from '../../default-svg/DefaultSVG';
 
 export const Bell: FC = ({
-	fill = '#000000',
+	fill = 'fff',
 	viewBox = '0 0 24 24',
-	stroke = '#000000',
-	height = `${240}px`,
-	width = `${240}px`,
+	stroke = '#fff',
+	height = 20,
+	width = 20,
 	id,
 }: Partial<SVGAttributes<any>>) => {
 	const randomId = id || uuidv4();
 	return (
 		<DefaultSVG
 			viewBox={viewBox}
-			fill={fill}
-			height={height}
-			width={width}>
+			fill={`#${fill}`}
+			height={`${Number(height)}px`}
+			width={`${Number(width)}px`}>
 			<g
-				id={`${randomId}_bgCarrier`}
+				id={`${randomId}_bgBell`}
 				strokeWidth='0'
 			/>
 			<g
-				id={`${randomId}_tracerCarrier`}
+				id={`${randomId}_tracerBell`}
 				strokeLinecap='round'
 				strokeLinejoin='round'
 			/>

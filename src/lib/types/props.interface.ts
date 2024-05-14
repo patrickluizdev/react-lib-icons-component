@@ -1,15 +1,21 @@
-import { HTMLAttributes, HtmlHTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 
 export type ColorsAsHex = `#${string}`;
 export type PixelSizes = `${number}px`;
 
-export interface IElementMeasures {
+export type ElementMeasures = {
 	height: PixelSizes;
 	width: PixelSizes;
-}
+};
+
+export type SVGProps = {
+	fill?: ColorsAsHex;
+	stroke?: ColorsAsHex;
+	id?: string;
+	viewBox: string;
+	children: React.ReactNode;
+} & ElementMeasures;
 
 export type ComponentChildren = {
 	children: React.ReactNode;
 } & HTMLAttributes<SVGElement>;
-
-export interface IconDefaultProps extends HTMLAttributes<SVGElement> {}
