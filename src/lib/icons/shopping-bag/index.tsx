@@ -2,7 +2,7 @@ import { FC, SVGAttributes } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { DefaultSVG } from '../../default-svg/DefaultSVG';
 
-export const ShopingBag: FC = ({
+export const ShoppingBag: FC = ({
 	stroke = 'ed708e',
 	fill = 'fff',
 	viewBox = '-2.4 -2.4 28.80 28.80',
